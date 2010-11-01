@@ -6,5 +6,52 @@
 
 
 /*
- * Description here...
+ * Development styles - may be deleted
  */
+
+#page-wrapper {
+	border: 1px dashed red;
+}
+
+
+
+/*
+ * General page layout
+ */
+
+#page-wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+body {
+	background-image: url(../images/back.jpg);
+	background-position: top center;
+}
+
+#main {
+	background-color: #D6CAA8;	/* Fallback color in case bg img does not load. */
+}
+
+#site-slogan {
+	position: absolute;
+	background-color: #F9F2D8;
+	right: 10%;
+	top: 50px;
+	height: 50px;
+	width: 400px;
+	padding: 10px;
+	border: 1px solid #000000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+
+
+/*
+ * Navigation
+ */
+ 
+ 
