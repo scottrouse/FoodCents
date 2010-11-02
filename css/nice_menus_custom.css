@@ -13,25 +13,21 @@ ul.nice-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  border-top: 1px solid #ccc;
 }
 
 ul.nice-menu li {
-  border: 1px solid #ccc;
   border-top: 0;
   float: left; /* LTR */
-  background-color: #eee;
 }
 
 ul.nice-menu a {
-  padding: 0.3em 5px 0.3em 5px;
+  padding: 2px 5px;
 }
 
 ul.nice-menu ul {
   top: 1.8em;
   left: -1px; /* LTR */
   border: 0;
-  border-top: 1px solid #ccc;
   margin-right: 0; /* LTR */
 }
 
@@ -109,7 +105,6 @@ ul.nice-menu-down {
 }
 
 ul.nice-menu-down li {
-  border-top: 1px solid #ccc;
 }
 
 ul.nice-menu-down li li {
@@ -129,79 +124,46 @@ ul.nice-menu-down li ul li ul {
   top: -1px;
 }
 
-ul.nice-menu-down .menuparent a {
-  padding-right: 15px; /* LTR */
+#navigation ul.nice-menu-down .menuparent ul {
+	box-shadow: 5px 5px 5px #ccc;
+	-moz-box-shadow: 0px 5px 5px #000;
+	-webkit-box-shadow: 5px 5px 5px #ccc;
+}
+
+#navigation ul.nice-menu-down .menuparent ul li {
+	padding: 0;
+}
+
+#navigation ul.nice-menu-down .menuparent ul li a {
+	color: #000000;
+	background-color: #DDB05C;
+	border-bottom: 1px dashed #000000;
+	padding: 0.2em 5px;
+}
+
+#navigation ul.nice-menu-down .menuparent ul li a:hover {
+	background-color: #DFC06E;
+	color: #211000;
+}
+
+ul.nice-menu-down .menuparent ul li.first {
+	margin-top: 7px;
+}
+
+ul.nice-menu-down .menuparent ul li.last a {
+	border-bottom: none;
 }
 
 ul.nice-menu-down li.menuparent {
-  background: #eee url(arrow-down.png) right center no-repeat; /* LTR */
 }
 
 ul.nice-menu-down li.menuparent:hover {
-  background: #ccc url(arrow-down.png) right center no-repeat; /* LTR */
 }
 
 ul.nice-menu-down li li.menuparent {
-  background: #eee url(arrow-right.png) right center no-repeat; /* LTR */
+  background: #eee url(/sites/all/modules/nice_menus/arrow-right.png) right center no-repeat; /* LTR */
 }
 
 ul.nice-menu-down li li.menuparent:hover {
-  background: #ccc url(arrow-right.png) right center no-repeat; /* LTR */
-}
-
-/******************************
- Garland-specific CSS
-******************************/
-
-/**
- * Global CSS for ALL menu types
- */
-ul.nice-menu li {
-  margin: 0;
-  padding-left: 0; /* LTR */
-  background-image: none;
-}
-
-#header-region ul.nice-menu li {
-  margin: 0;
-  /* Padding rules are needed to deal with Garland's header line-height. */
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
-  background: #eee;
-}
-
-#header-region ul.nice-menu ul {
-  top: 1.8em;
-  left: -1px; /* LTR */
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin-right: 0; /* LTR */
-}
-
-#header-region ul.nice-menu ul {
-  top: 1.7em;
-}
-
-/**
- * HORIZONTAL (down) menus
- */
-#header-region ul.nice-menu-down li ul li ul {
-  left: 12.5em; /* LTR */
-  top: -1px;
-}
-
-#header-region ul.nice-menu-down li.menuparent {
-  background: #eee url(arrow-down.png) right center no-repeat; /* LTR */
-}
-
-#header-region ul.nice-menu-down li.menuparent:hover {
-  background: #ccc url(arrow-down.png) right center no-repeat; /* LTR */
-}
-
-#header-region ul.nice-menu-down li li.menuparent {
-  background: #eee url(arrow-right.png) right center no-repeat; /* LTR */
-}
-
-#header-region ul.nice-menu-down li li.menuparent:hover {
-  background: #ccc url(arrow-right.png) right center no-repeat; /* LTR */
+  background: #ccc url(/sites/all/modules/nice_menus/arrow-right.png) right center no-repeat; /* LTR */
 }
