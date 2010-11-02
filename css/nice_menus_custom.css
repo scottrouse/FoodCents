@@ -125,9 +125,9 @@ ul.nice-menu-down li ul li ul {
 }
 
 #navigation ul.nice-menu-down .menuparent ul {
-	box-shadow: 5px 5px 5px #ccc;
+	box-shadow: 0px 5px 5px #000;
 	-moz-box-shadow: 0px 5px 5px #000;
-	-webkit-box-shadow: 5px 5px 5px #ccc;
+	-webkit-box-shadow: 0px 5px 5px #000;
 }
 
 #navigation ul.nice-menu-down .menuparent ul li {
