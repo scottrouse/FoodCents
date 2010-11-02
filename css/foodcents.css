@@ -26,6 +26,7 @@ body {
 	background-image: url(../images/back.jpg);
 	background-position: top center;
 	font-family: Arial, Helvetica, sans-serif;
+	font-size: 90%;
 }
 
 #main {
@@ -34,6 +35,7 @@ body {
 	-webkit-border-radius: 10px 10px 0px 0px;
 	border-radius: 10px 10px 0px 0px; /* future proofing */
 	-khtml-border-radius: 10px 10px 0px 0px; /* for old Konqueror browsers */
+	background-image: url(../images/main-bg.png);
 }
 
 #site-slogan {
@@ -55,6 +57,9 @@ body {
 	color: #FFF;
 	background-color: #000;
 	padding: 10px;
+	box-shadow: 0px 0px 5px #555;
+	-moz-box-shadow: 0px 0px 5px #555;
+	-webkit-box-shadow: 0px 0px 5px #555;
 }
 
 #content-wrapper {
@@ -64,6 +69,16 @@ body {
 	box-shadow: 0px 0px 5px #555;
 	-moz-box-shadow: 0px 0px 5px #555;
 	-webkit-box-shadow: 0px 0px 5px #555;
+}
+
+#main-wrapper {
+	box-shadow: 0px 0px 5px #555;
+	-moz-box-shadow: 0px 0px 5px #555;
+	-webkit-box-shadow: 0px 0px 5px #555;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px; /* future proofing */
+	-khtml-border-radius: 10px 10px 0px 0px; /* for old Konqueror browsers */
 }
 
 #content-inner {
@@ -91,6 +106,16 @@ body {
 	margin: 10px 10px 10px 0px;
 }
 
+#logo {
+	margin: 0 0 -45px 45px;
+	position: relative;
+	z-index: 3;
+}
+
+
+
+
+
 /*
  * Navigation
  */
@@ -105,6 +130,7 @@ body {
 	-webkit-border-radius: 10px 10px 0px 0px;
 	border-radius: 10px 10px 0px 0px; /* future proofing */
 	-khtml-border-radius: 10px 10px 0px 0px; /* for old Konqueror browsers */
+	height: 60px;
 }
 
 #navigation .section {
@@ -121,12 +147,20 @@ body {
 
 #secondary-menu {
 	float: right;
-	margin: 0;
+	margin: 0 5% 0 0;
 }
 
-#secondary-menu a {
+#secondary-menu li {
+	border-right: 1px solid #FFFFFF;
 }
 
+#secondary-menu li.last {
+	border-right: none;
+}
+
+#block-block-1 {
+	margin-left: 5%;
+}
 
 
 /*
@@ -165,7 +199,7 @@ h1.title, h2.title {
 
 table {
 	width: 100%;
-	border: 1px solid #000;
+	border: 1px solid #996633;
 }
 
 th, thead th, tbody th {
@@ -174,13 +208,13 @@ th, thead th, tbody th {
 }
 
 thead {
-	border-bottom: 2px solid #000;
+	border-bottom: 2px solid #996633;
 }
 
 tr.even, tr.odd {
 	border-bottom: 1px solid #FFF;
-	border-left: 1px solid #000;
-	border-right: 1px solid #000;
+	border-left: 1px solid #996633;
+	border-right: 1px solid #996633;
 }
 
 td {
@@ -198,6 +232,10 @@ tr.even {
 
 tbody tr:hover {
 	background-color: #D6D2D0;
+}
+
+tr.views-row-last {
+	border-bottom: 1px solid #996633;
 }
 
 
@@ -280,4 +318,146 @@ a.flag-action {
 	-moz-opacity:0.8;
 	-khtml-opacity: 0.8;
 	opacity: 0.8;
+}
+
+.three-col .views-field-ops {
+	float: left;
+	height: 24px;
+	margin-right: 5px;
+}
+
+.three-col .views-row {
+	clear: left;
+}
+
+
+
+
+/*
+ * Stores
+ */
+
+.node-type-store .vcard {
+	margin-top: 15px;
+}
+
+.node-type-store .adr .fn {
+	font-weight: bold;
+}
+
+.node-type-store .location-locations-wrapper {
+	float: left;
+	width: 33%;
+}
+
+.node-type-store .view-store {
+	float: right;
+	width: 67%;
+}
+
+.view-store .item-list ul {
+	-moz-column-width: 200px;
+	-moz-column-gap: 20px;
+	-webkit-column-width: 200px;
+	-webkit-column-gap: 20px;
+	column-width: 200px;
+	column-gap: 20px;
+}
+
+.view-store .item-list ul li {
+	margin-bottom: 25px;
+	display: inline-block;
+	height: 100px;
+}
+
+.node-type-store .view-id-specials {
+	float: right;
+	clear: right;
+	width: 67%;
+}
+
+.gmap {
+	border: 1px solid #996633;
+}
+
+
+
+
+/*
+ * Sidebars
+ */
+
+.region-sidebar-second .block h2.title {
+	width: 265px;
+	height: 38px;
+	background-image: url(../images/sidebar-header.gif);
+	background-repeat: no-repeat;
+	line-height: 38px;
+	padding-left: 25px;
+	overflow: hidden;
+}
+
+.views-exposed-widget select, .views-exposed-widget input {
+	width: 225px;
+}
+
+.with-navigation .region-sidebar-second {
+	margin-top: 60px;
+}
+
+
+/*
+ * Twitter Block
+ */
+
+#block-views-tweets-block2 {
+	background-image: url(../images/torn-paper.png);
+	background-position: right center;
+	height: 138px;
+	background-repeat: no-repeat;
+	position: relative;
+	margin-top: -10px;
+	margin-left: -10px;
+	max-width: 959px;
+}
+
+#block-views-tweets-block2 .content {
+	position: absolute;
+	background-color: #F9F2D8;
+	left: 20%;
+	top: 10px;
+	height: 50px;
+	width: 500px;
+	padding: 10px;
+	border: 1px solid #000000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+
+
+/*
+ * Social Media Block
+ */
+
+#block-block-2 {
+	margin: 0px 10px 0 0;
+	padding: 0;
+	border: none;
+	background: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	height: 50px;
+	float: right;
+}
+
+#block-block-2 .content p {
+	margin: 0;
+}
+
+#block-block-2 a {
+	float: left;
 }
