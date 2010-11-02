@@ -27,6 +27,7 @@
 body {
 	background-image: url(../images/back.jpg);
 	background-position: top center;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 #main {
@@ -78,6 +79,9 @@ body {
  * Navigation
  */
 
+#block-nice_menus-1 {
+	margin: 0;
+}
 
 #navigation {
 	background-color: #211000;
@@ -88,11 +92,15 @@ body {
 }
 
 #navigation .section {
+	margin-left: 300px;
 }
 
 #navigation a {
 	color: #FFFFFF;
 	text-transform: uppercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 2em;
+	font-weight: bold;
 }
 
 #secondary-menu {
@@ -120,4 +128,8 @@ a:hover {
 
 label {
 	font-weight: bold;
+}
+
+h1.title {
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
