@@ -20,6 +20,7 @@
 #page-wrapper {
 	width: 90%;
 	margin: 0 auto;
+	padding-top: 15px;
 }
 
 body {
@@ -134,7 +135,7 @@ body {
 }
 
 #navigation .section {
-	margin-left: 300px;
+	margin-left: 20%;
 }
 
 #navigation a {
@@ -271,6 +272,78 @@ a.term-5 {
 
 a.term-3 {
 	background-image: url(../images/flags/eu.png);
+}
+
+a.organic {
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+	height: 32px;
+	width: 32px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a.term-6 {
+	background-image: url(../images/organic/organic.png);
+}
+
+a.term-7 {
+	background-image: url(../images/organic/cog.png);
+}
+
+a.term-8 {
+	background-image: url(../images/organic/specialty.png);
+}
+
+a.term-30 {
+	background-image: url(../images/organic/vegan.png);
+}
+
+a.term-31 {
+	background-image: url(../images/organic/not-vegan.png);
+}
+
+a.term-36 {
+	background-image: url(../images/organic/not-organic.png);
+}
+
+a.term-32 {
+	background-image: url(../images/organic/gluten-free.png);
+}
+
+a.term-33 {
+	background-image: url(../images/organic/not-gluten-free.png);
+}
+
+a.term-34 {
+	background-image: url(../images/organic/fair-trade.png);
+}
+
+a.term-35 {
+	background-image: url(../images/organic/not-fair-trade.png);
+}
+
+
+/*
+ * Legend
+ */
+
+table#icon-legend {
+	border: none;
+}
+
+table#icon-legend th {
+	padding: 0;
+	text-align: left;
+	width: 150px;
+	padding-left: 5px;
+}
+
+table#icon-legend td {
+	border: none;
 }
 
 
@@ -410,7 +483,7 @@ a.flag-action {
  * Twitter Block
  */
 
-#block-views-tweets-block2 {
+#block-block-3 {
 	background-image: url(../images/torn-paper.png);
 	background-position: right center;
 	height: 138px;
@@ -421,7 +494,7 @@ a.flag-action {
 	max-width: 959px;
 }
 
-#block-views-tweets-block2 .content {
+#block-block-3 .content {
 	position: absolute;
 	background-color: #F9F2D8;
 	left: 20%;
@@ -452,6 +525,8 @@ a.flag-action {
 	-webkit-box-shadow: none;
 	height: 50px;
 	float: right;
+	position: absolute;
+	right: 0px;
 }
 
 #block-block-2 .content p {
@@ -460,4 +535,23 @@ a.flag-action {
 
 #block-block-2 a {
 	float: left;
+}
+
+
+
+
+
+
+/*
+ * Farmer's Market
+ */
+
+.node-type-farmers-market .field-field-farmers-market-website, .node-type-farmers-market .field-field-farmers-market-description {
+	width: 33%;
+	float: left;
+	clear: left;
+}
+
+.node-type-farmers-market .view-farmers-markets {
+	width: 67%;
 }

@@ -141,6 +141,10 @@ ul.nice-menu-down li ul li ul {
 	padding: 0.2em 5px;
 }
 
+#navigation ul.nice-menu-down .menuparent ul li.last a {
+	border-bottom: none;
+}
+
 #navigation ul.nice-menu-down .menuparent ul li a:hover {
 	background-color: #DFC06E;
 	color: #211000;
