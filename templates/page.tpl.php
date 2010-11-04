@@ -115,6 +115,7 @@
 <head>
   <title><?php print $head_title; ?></title>
   <?php print $head; ?>
+  <link rel="apple-touch-icon" type="image/png" href="/sites/all/themes/foodcents/images/apple-touch-icon.png" />
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
