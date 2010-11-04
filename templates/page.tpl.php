@@ -118,7 +118,7 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
-<body class="<?php print $classes; ?>">
+<body class="<?php print $classes; ?> <?php if ($is_admin): ?>admin-access<?php endif; ?>">
 
   <?php if ($primary_links): ?>
     <div id="skip-link"><a href="#main-menu"><?php print t('Jump to Navigation'); ?></a></div>

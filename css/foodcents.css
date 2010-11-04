@@ -28,6 +28,7 @@ body {
 	background-position: top center;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 90%;
+	background-color: #C7FE1F;
 }
 
 #main {
@@ -52,6 +53,8 @@ body {
 	-webkit-border-radius: 10px;
 	border-radius: 10px; /* future proofing */
 	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
 #footer {
@@ -113,8 +116,14 @@ body {
 	z-index: 3;
 }
 
+#content-area .node-teaser {
+	margin-bottom: 3em;
+	margin-top: 3em;
+}
 
-
+.front .breadcrumb {
+	display: none;
+}
 
 
 /*
@@ -244,7 +253,7 @@ tr.views-row-last {
  * Icons
  */
 
-a.origin {
+table a.origin {
 	display: block;
 	text-indent: -9999px;
 	overflow: hidden;
@@ -254,27 +263,27 @@ a.origin {
 	background-position: center center;
 }
 
-a.term-4 {
+table a.term-4 {
 	background-image: url(../images/flags/canada.png);
 }
 
-a.term-1 {
+table a.term-1 {
 	background-image: url(../images/flags/bc.png);
 }
 
-a.term-2 {
+table a.term-2 {
 	background-image: url(../images/flags/usa.png);
 }
 
-a.term-5 {
+table a.term-5 {
 	background-image: url(../images/flags/mexico.png);
 }
 
-a.term-3 {
+table a.term-3 {
 	background-image: url(../images/flags/eu.png);
 }
 
-a.organic {
+table a.organic {
 	display: block;
 	text-indent: -9999px;
 	overflow: hidden;
@@ -286,63 +295,99 @@ a.organic {
 	margin-right: auto;
 }
 
-a.term-6 {
+table a.term-6 {
 	background-image: url(../images/organic/organic.png);
 }
 
-a.term-7 {
+table a.term-7 {
 	background-image: url(../images/organic/cog.png);
 }
 
-a.term-8 {
+table a.term-8 {
 	background-image: url(../images/organic/specialty.png);
 }
 
-a.term-30 {
+table a.term-30 {
 	background-image: url(../images/organic/vegan.png);
 }
 
-a.term-31 {
+table a.term-31 {
 	background-image: url(../images/organic/not-vegan.png);
 }
 
-a.term-36 {
+table a.term-36 {
 	background-image: url(../images/organic/not-organic.png);
 }
 
-a.term-32 {
+table a.term-32 {
 	background-image: url(../images/organic/gluten-free.png);
 }
 
-a.term-33 {
+table a.term-33 {
 	background-image: url(../images/organic/not-gluten-free.png);
 }
 
-a.term-34 {
+table a.term-34 {
 	background-image: url(../images/organic/fair-trade.png);
 }
 
-a.term-35 {
+table a.term-35 {
 	background-image: url(../images/organic/not-fair-trade.png);
 }
+
+.views-field-edit-node a, .views-field-delete-node a  {
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+	height: 16px;
+	width: 16px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+table .views-field-edit-node a, table .views-field-delete-node a {
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.views-field-edit-node a {
+	background-image: url(../images/edit.png);
+}
+
+.views-field-delete-node a {
+	background-image: url(../images/delete.png);
+}
+
+table .views-field-edit-node, table .views-field-delete-node {
+	display: none;
+}
+
+.admin-access table .views-field-edit-node, .admin-access table .views-field-delete-node {
+	display: table-cell;
+}
+
+table .views-field-addtoany-link {
+	text-align: center;
+}
+
 
 
 /*
  * Legend
  */
 
-table#icon-legend {
+table.icon-legend {
 	border: none;
 }
 
-table#icon-legend th {
+table.icon-legend th {
 	padding: 0;
 	text-align: left;
 	width: 150px;
 	padding-left: 5px;
 }
 
-table#icon-legend td {
+table.icon-legend td {
 	border: none;
 }
 
@@ -401,6 +446,10 @@ a.flag-action {
 
 .three-col .views-row {
 	clear: left;
+}
+
+.flag-wrapper {
+	position: inherit;
 }
 
 
@@ -478,6 +527,10 @@ a.flag-action {
 	margin-top: 60px;
 }
 
+#block-views-favorites-block_1 h3 {
+	font-size: 1.1em;
+}
+
 
 /*
  * Twitter Block
@@ -546,12 +599,16 @@ a.flag-action {
  * Farmer's Market
  */
 
-.node-type-farmers-market .field-field-farmers-market-website, .node-type-farmers-market .field-field-farmers-market-description {
+.node-type-farmers-market .node-type-farmers-market .field-field-farmers-market-website, .node-type-farmers-market .node-type-farmers-market .field-field-farmers-market-description {
 	width: 33%;
 	float: left;
 	clear: left;
 }
 
-.node-type-farmers-market .view-farmers-markets {
+.node-type-farmers-market .node-type-farmers-market .view-farmers-markets {
 	width: 67%;
+}
+
+.node-type-farmers-market .meta {
+	display: none;
 }
