@@ -557,6 +557,11 @@ a.flag-action {
 	max-width: 959px;
 }
 
+#block-views-tweets-block_1 .views-field-nothing-1 {
+	position: absolute;
+	left: -75px;
+}
+
 #block-block-3 .content, #block-views-tweets-block_1 .content {
 	position: absolute;
 	background-color: #F9F2D8;
