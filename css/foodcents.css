@@ -9,6 +9,12 @@
  * Development styles - may be deleted
  */
 
+.hilite {
+	background-color: lime;
+}
+
+
+
 
 
 
@@ -536,7 +542,7 @@ a.flag-action {
  * Twitter Block
  */
 
-#block-block-3 {
+#block-block-3, #block-views-tweets-block_1 {
 	background-image: url(../images/torn-paper.png);
 	background-position: right center;
 	height: 138px;
@@ -547,7 +553,7 @@ a.flag-action {
 	max-width: 959px;
 }
 
-#block-block-3 .content {
+#block-block-3 .content, #block-views-tweets-block_1 .content {
 	position: absolute;
 	background-color: #F9F2D8;
 	left: 20%;
