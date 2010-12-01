@@ -500,6 +500,7 @@ a.flag-action {
 	margin-bottom: 25px;
 	display: inline-block;
 	height: 100px;
+	list-style: none;
 }
 
 .node-type-store .view-id-specials {
